@@ -10,7 +10,7 @@ import org.springframework.transaction.PlatformTransactionManager;
 @Configuration
 public class JpaConfig {
 
-    // Only TransactionManager, EntityManagerFactory is auto-configured
+    
     @Bean
     public PlatformTransactionManager transactionManager(EntityManagerFactory emf) {
         return new JpaTransactionManager(emf);
